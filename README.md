@@ -32,7 +32,7 @@ This project is a web application helps providing Human Resources Consulting and
 - **Node.js**: Back-end development.
 
 ## Project Structure
-
+```
 363-project_FinalFrontEnd/
 |-Dashboard
 |---assets
@@ -43,6 +43,7 @@ This project is a web application helps providing Human Resources Consulting and
 |-otp
 |-resetPass
 |-signup
+```
 
 - **index.html**: Contains the main structure of the web application.
 - **style.css**: Handles the styling of the web pages, making the app visually appealing.
