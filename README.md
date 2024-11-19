@@ -10,7 +10,7 @@ A web application helps providing Human Resources Consulting and Recommendation
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [Usage Guidelines](#usage-guidelines)
-- [Notes] (#Notes)
+- [Notes](#Notes)
 - [Contributing](#contributing)
 
 ## Project Overview
@@ -33,18 +33,16 @@ This project is a web application helps providing Human Resources Consulting and
 
 ## Project Structure
 
-````
 363-project_FinalFrontEnd/
-   |-Dashboard
-   |---assets
-   |---dist
-   |-changePass
-   |-homepage & blog
-   |-loginPage
-   |-otp
-   |-resetPass
-   |-signup
-
+|-Dashboard
+|---assets
+|---dist
+|-changePass
+|-homepage & blog
+|-loginPage
+|-otp
+|-resetPass
+|-signup
 
 - **index.html**: Contains the main structure of the web application.
 - **style.css**: Handles the styling of the web pages, making the app visually appealing.
@@ -56,13 +54,15 @@ This project is a web application helps providing Human Resources Consulting and
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Abdullah-Alanazi1/Consulting-app.git
-````
+   ```
+
+
 
 2. **Navigate into the project directory**:
    ```bash
    cd Consulting-app
    ```
-3. **Open the `homePage.html` from the `homepage & blog` file in your browser**:
+3. **Open the `homePage.html` from the `homepage & blog` in your browser**:
    - You can either double-click the file or use a local server (e.g., Live Server extension in VSCode).
 
 ## Usage Guidelines
@@ -78,3 +78,4 @@ This project is a web application helps providing Human Resources Consulting and
 ## Contributing
 
 Feel free to contribute to this project by opening issues or submitting pull requests. Contributions are welcome!
+
