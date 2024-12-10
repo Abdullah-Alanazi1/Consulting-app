@@ -31,8 +31,7 @@ router.use(function (req, res, next) {
   );
   next();
 });
-// * Protected routes with middleware
-router.use(["/dashboard"], protectedRouteMiddleware);
+
 
 // * Importing the routers.
 router.use("/signin", signinRouter);
