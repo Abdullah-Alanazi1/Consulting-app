@@ -50,11 +50,11 @@ router.post("/", async (req, res) => {
         .status(400)
         .json({ msg: "User not found. Please sign up first." });
     }
-    // Assign token
+    // * Generate the JWT token
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
-    return res.status(200).json({ token, position: user.position });
+    return res.status(200).json({ position: user.position, token });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ msg: "Internal server error." });

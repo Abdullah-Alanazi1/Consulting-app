@@ -112,16 +112,19 @@ async function handleSubmitForm(event) {
   const lastName = document.getElementById("lastName").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-  const position = "jobSeeker"; // Or dynamically get this from a form element
-
+  const position = event.submitter.value;
+  // log the event object for debugging purposes
   try {
     const response = await fetch("/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ firstName, lastName, email, password, position }),
     });
-    if (response.ok) {
-      redirectToPage("/signIn");
+    //  resirect to sign-in page if status code is 201
+    if (response.status === 201) {
+      redirectToPage("/signin");
+    } else {
+      alert("An error occurred. Please try again.");
     }
   } catch (error) {
     console.log(error);

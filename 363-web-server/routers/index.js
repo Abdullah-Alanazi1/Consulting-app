@@ -11,6 +11,7 @@ import changepassRouter from "./changepassRouter.js";
 import blogRouter from "./blogRouter.js";
 import dashboardRouter from "./dashboardRouter.js";
 import signUpRouter from "./signUpRouter.js";
+import jobSeekerRouter from "./jobseekerRouter.js";
 // ! For testing purposes
 
 // * Get the current directory path.
@@ -31,8 +32,11 @@ router.use(function (req, res, next) {
   );
   next();
 });
-
-
+// Protected routes
+router.use(
+  ["/dashboard", "/jobseeker", "getUserData"],
+  protectedRouteMiddleware
+);
 // * Importing the routers.
 router.use("/signin", signinRouter);
 router.use("/", homeRouter);
@@ -40,9 +44,12 @@ router.use("/resetpass", resetPassRouter);
 router.use("/otp", otpRouter);
 router.use("/changepass", changepassRouter);
 router.use("/blog", blogRouter);
-router.use("/dashboard", dashboardRouter);
 router.use("/signup", signUpRouter);
+router.use("/dashboard", dashboardRouter);
+router.use("/jobseeker", jobSeekerRouter);
+//
 
+//
 // * 404 page.
 router.use("*", (req, res) => {
   res.status(404).sendFile(path.join(__dirname, "..", "Pages", "404.html"));
