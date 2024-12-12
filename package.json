@@ -1,0 +1,23 @@
+{
+  "name": "363-web-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^x.x.x",
+    "express": "^x.x.x",
+    "jsonwebtoken": "^x.x.x",
+    "mailgun-js": "^0.22.0",
+    "mailtrap": "^3.4.0",
+    "mongoose": "^8.8.4",
+    "nodemailer": "^6.9.16",
+    "nodeman": "^x.x.x"
+  }
+}
