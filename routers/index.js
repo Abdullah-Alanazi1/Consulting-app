@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 // routers middlewares imports
-import signinRouter from "./signinRouter.js";
+import signinRouter from "./signInRouter.js";
 import homeRouter from "./homeRouter.js";
 import protectedRouteMiddleware from "../middlewares/protectedRouteMiddleware.js";
 import resetPassRouter from "./resetPassRouter.js";
